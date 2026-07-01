@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 60px;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.score-value {
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 30px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+
+#pongCanvas {
+    display: block;
+    background: linear-gradient(to right, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    cursor: none;
+}
+
+.instructions {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.instructions strong {
+    color: #ffd700;
+}
+
+@media (max-width: 600px) {
+    .scoreboard {
+        gap: 40px;
+    }
+
+    #pongCanvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .score-value {
+        font-size: 36px;
+        padding: 8px 20px;
+    }
+}
+
